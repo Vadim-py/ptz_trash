@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6065a60c819b485aa9b58062ceef4119 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: -5.0%;
+                    overflow-x: hidden;
+                }
+                body{}
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">ptz_trash</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="">Карта <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Об проекте</a>
+      <a class="nav-link" href="#">Связь с нами</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Хотите добавить информацию?</a>
+    </div>
+  </div>
+</nav>
+            <div class="folium-map" id="map_6065a60c819b485aa9b58062ceef4119" ></div>
+        
+</body>
+<script>    
+    
+            var map_6065a60c819b485aa9b58062ceef4119 = L.map(
+                "map_6065a60c819b485aa9b58062ceef4119",
+                {
+                    center: [61.78491, 34.34691],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a3c7c7269926450e9a0c572bcd61f74b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6065a60c819b485aa9b58062ceef4119);
+        
+    
+            var feature_group_b6af5ce0aa084fb28a5c529299c4dd79 = L.featureGroup(
+                {}
+            ).addTo(map_6065a60c819b485aa9b58062ceef4119);
+        
+    
+            var feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554 = L.featureGroup.subGroup(
+                feature_group_b6af5ce0aa084fb28a5c529299c4dd79
+            );
+            feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554.addTo(map_6065a60c819b485aa9b58062ceef4119);
+        
+    
+            var marker_f368602650b04943829707a0b7d98fd2 = L.marker(
+                [61.76033, 34.43718],
+                {}
+            ).addTo(feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554);
+        
+    
+            var icon_aaa68ed0d7354e4098d72744b46878ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f368602650b04943829707a0b7d98fd2.setIcon(icon_aaa68ed0d7354e4098d72744b46878ed);
+        
+    
+        var popup_0095eb39d8e441bf984120d78f14e6ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52f35f6b4a1847dc9aa3ccf497b9467e = $(`<div id="html_52f35f6b4a1847dc9aa3ccf497b9467e" style="width: 100.0%; height: 100.0%;">ПЭТ мусорка на ключевой</div>`)[0];
+            popup_0095eb39d8e441bf984120d78f14e6ec.setContent(html_52f35f6b4a1847dc9aa3ccf497b9467e);
+        
+
+        marker_f368602650b04943829707a0b7d98fd2.bindPopup(popup_0095eb39d8e441bf984120d78f14e6ec)
+        ;
+
+        
+    
+    
+            var marker_2138625ba98a459790a17c14ca585bac = L.marker(
+                [61.78848, 34.34818],
+                {}
+            ).addTo(feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554);
+        
+    
+            var icon_2190384206c2460ca558893526a71c4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2138625ba98a459790a17c14ca585bac.setIcon(icon_2190384206c2460ca558893526a71c4d);
+        
+    
+        var popup_fbcbcca5a073443f968e0185c52c3916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de516aff45c74b528bcb3bae39b30638 = $(`<div id="html_de516aff45c74b528bcb3bae39b30638" style="width: 100.0%; height: 100.0%;">ПЭТ мусорка в парке 50-Летия Пионерской Организации</div>`)[0];
+            popup_fbcbcca5a073443f968e0185c52c3916.setContent(html_de516aff45c74b528bcb3bae39b30638);
+        
+
+        marker_2138625ba98a459790a17c14ca585bac.bindPopup(popup_fbcbcca5a073443f968e0185c52c3916)
+        ;
+
+        
+    
+    
+            var marker_7c06987561f6402fa29f9491438b8a86 = L.marker(
+                [61.78497, 34.36438],
+                {}
+            ).addTo(feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554);
+        
+    
+            var icon_e16a7e98063f4eb088280d3daf81604e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c06987561f6402fa29f9491438b8a86.setIcon(icon_e16a7e98063f4eb088280d3daf81604e);
+        
+    
+        var popup_f4c916a6d95641ffa9af29f4bb59933e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69334352ee2c4bb99b03d08a7282101e = $(`<div id="html_69334352ee2c4bb99b03d08a7282101e" style="width: 100.0%; height: 100.0%;">ПЭТ мусорка в Губернаторском парке возле баскетбольной площадки</div>`)[0];
+            popup_f4c916a6d95641ffa9af29f4bb59933e.setContent(html_69334352ee2c4bb99b03d08a7282101e);
+        
+
+        marker_7c06987561f6402fa29f9491438b8a86.bindPopup(popup_f4c916a6d95641ffa9af29f4bb59933e)
+        ;
+
+        
+    
+    
+            var marker_0da06141172347d4a22250c14865d78d = L.marker(
+                [61.78605, 34.36837],
+                {}
+            ).addTo(feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554);
+        
+    
+            var icon_ff997acd671b4798a15bb9604fb9e2ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0da06141172347d4a22250c14865d78d.setIcon(icon_ff997acd671b4798a15bb9604fb9e2ad);
+        
+    
+        var popup_19adfdc49a884497a6dd4ddb668bf872 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ee8d1b1b9384abdbcbf89ff9559eb74 = $(`<div id="html_6ee8d1b1b9384abdbcbf89ff9559eb74" style="width: 100.0%; height: 100.0%;">ПЭТ мусорка около разводного моста</div>`)[0];
+            popup_19adfdc49a884497a6dd4ddb668bf872.setContent(html_6ee8d1b1b9384abdbcbf89ff9559eb74);
+        
+
+        marker_0da06141172347d4a22250c14865d78d.bindPopup(popup_19adfdc49a884497a6dd4ddb668bf872)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_10e5e2a98a6740b9ba639a200fdab8af = L.featureGroup.subGroup(
+                feature_group_b6af5ce0aa084fb28a5c529299c4dd79
+            );
+            feature_group_sub_group_10e5e2a98a6740b9ba639a200fdab8af.addTo(map_6065a60c819b485aa9b58062ceef4119);
+        
+    
+            var layer_control_0b30eec210a040b78fac5b443e941e66 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a3c7c7269926450e9a0c572bcd61f74b,
+                },
+                overlays :  {
+                    "\u0412\u0441\u0435 \u041f\u042d\u0422 \u043c\u0443\u0441\u043e\u0440\u043a\u0438" : feature_group_b6af5ce0aa084fb28a5c529299c4dd79,
+                    "\u041f\u042d\u0422 \u043c\u0443\u0441\u043e\u0440\u043a\u0438" : feature_group_sub_group_ad6aea9c122341a79ee41d2e1fde5554,
+                    "\u0421\u0431\u043e\u0440\u043c\u043e\u0431\u0438\u043b\u044c" : feature_group_sub_group_10e5e2a98a6740b9ba639a200fdab8af,
+                },
+            };
+            L.control.layers(
+                layer_control_0b30eec210a040b78fac5b443e941e66.base_layers,
+                layer_control_0b30eec210a040b78fac5b443e941e66.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_6065a60c819b485aa9b58062ceef4119);
+        
+</script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
