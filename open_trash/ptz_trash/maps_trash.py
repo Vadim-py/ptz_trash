@@ -38,4 +38,4 @@ def map1():
     ).add_to(group1)
 
     folium.LayerControl(collapsed=False).add_to(m)
-    m.save('ptz_trash/templates/1.html')    
+    m.save('ptz_trash/templates/1.html')

@@ -1,0 +1,9 @@
+{% include 'base.html' %}
+{% include 'nav.html' %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <hr>
+    <input type="submit" class=" uk-button uk-button-primary">
+</form>
