@@ -1,1 +1,0 @@
-web: gunicorn open_trash.open_trash.wsgi --preload -b 0.0.0.0:5000 
